@@ -5,4 +5,5 @@ tunnels:
     addr: 8000
     basic_auth: 
      - "user:pass"
+    domain: ngrok.your.domain # This might not be needed
 version: 2
