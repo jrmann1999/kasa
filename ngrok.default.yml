@@ -1,0 +1,8 @@
+authtoken: <YOURAUTHTOKEN>
+tunnels:
+  flask:
+    proto: http
+    addr: 8000
+    basic_auth: 
+     - "user:pass"
+version: 2

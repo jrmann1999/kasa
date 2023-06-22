@@ -1,0 +1,8 @@
+services:
+    ngrok:
+      build:
+        context: ./
+        dockerfile: ngrok.Dockerfile
+      container_name: kasa-ngrok
+      ports:
+        - 8000:8000
