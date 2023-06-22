@@ -1,0 +1,1 @@
+Using NGROK as a WebHook entry point to KASA smartplug automation.  Using docker for the ngrok agent.
