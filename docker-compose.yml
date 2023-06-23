@@ -1,7 +1,0 @@
-services:
-    ngrok:
-      build:
-        context: ./
-        dockerfile: ngrok.Dockerfile
-      container_name: kasa-ngrok
-      network_mode: host

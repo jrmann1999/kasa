@@ -1,4 +1,4 @@
-from project.server import app
+from flaskapp.project.server import app
 
 
 def test_discover_noarg():

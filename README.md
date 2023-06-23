@@ -3,3 +3,7 @@ I got tired of IFTTT breaking, and with it only allowing two actions for free ac
 This is a Flask app that can tie with ngrok (running in a Docker container) to serve up webhooks to discover and control KASA devices on a local network.
 
 Two routines are provided, discover (with an optional device IP address) and toggle. Documentation is available at /documentation.
+
+This is fully dockerized, to run it:
+
+docker-compose up -d --build
