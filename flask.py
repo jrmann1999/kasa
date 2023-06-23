@@ -11,17 +11,7 @@ from flask_selfdoc import Autodoc
 
 
 app = Flask(__name__)
-
 auto = Autodoc(app)
-
-
-@auto.doc
-def discovery_device(devid=None):
-  dev = asyncio.run(Discover.discover(target=devid))
-  asyncio.run(dev[devid].update())
-
-  
-  return devary
 
 @app.route("/discover")
 @app.route("/discover/<string:devid>")
