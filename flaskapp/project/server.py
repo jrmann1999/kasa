@@ -128,5 +128,9 @@ def documentation():
     return auto.html()
 
 
+@app.route('/flask-health-check')
+def flaskhealthcheck():
+    return Response(status=200)
+
 if __name__ == "__main__":
     app.run(port=8000)
