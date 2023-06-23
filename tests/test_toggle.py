@@ -1,5 +1,6 @@
 from project.server import app
 
+
 def test_toggle_noarg():
     """
     GIVEN a discovery with no arguments
@@ -9,6 +10,7 @@ def test_toggle_noarg():
     t = app.test_client().get('/toggle')
     assert t.status_code == 404
 
+
 def test_discover_invalidarg():
     """
     GIVEN a discovery with a bad argument
@@ -17,6 +19,7 @@ def test_discover_invalidarg():
     """
     t = app.test_client().get('/toggle/asdf')
     assert t.status_code == 404
+
 
 def test_discover_validarg():
     """
