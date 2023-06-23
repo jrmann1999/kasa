@@ -129,7 +129,8 @@ def documentation():
 
 
 @app.route('/flask-health-check')
-def flaskhealthcheck():
+@app.route('/')
+def default():
     return Response(status=200)
 
 
